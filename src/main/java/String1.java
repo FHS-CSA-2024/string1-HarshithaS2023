@@ -190,13 +190,14 @@ public class String1
     public String left2(String str) {
         String first2 = str.substring(0,2);
         int later = str.length() - 2;
-        String test = "test";
+        String result = "";
         if (str.length()>2) {
-            return str.substring(later-1) + first2;
+            result = str.substring(later-1) + first2;
         }
         else {
-            return first2;
+            result = first2;
         }
+        return result;
     }
 
     /*
@@ -234,7 +235,6 @@ public class String1
             result = a + b;
         }
         return result;
-        
     }
 
     /*
