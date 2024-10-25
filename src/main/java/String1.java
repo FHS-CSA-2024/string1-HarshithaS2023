@@ -63,7 +63,7 @@ public class String1
      * makeTags("cite", "Yay") â†’ "<cite>Yay</cite>"
      */
     public String makeTags(String tag, String word) {
-        return "<" + tag + ">" + word + "<" + tag + ">";
+        return "<" + tag + ">" + word + "</" + tag + ">";
     }
 
     /*
@@ -190,13 +190,13 @@ public class String1
     public String left2(String str) {
         String first2 = str.substring(0,2);
         int later = str.length() - 2;
+        String test = "test";
         if (str.length()>2) {
-            return str.substring(later) + first2;
+            return str.substring(later-1) + first2;
         }
         else {
             return first2;
         }
-        
     }
 
     /*
