@@ -226,12 +226,14 @@ public class String1
      */
     public String conCat(String a, String b) {
         int aLast = a.length()-1;
+        String result = "";
         if (a.substring(aLast).equals(b.substring(0,1))){
-            return a + b.substring(1);
+            result = a + b.substring(1);
         }
         else {
-            return a + b;
+            result = a + b;
         }
+        return result;
         
     }
 
